@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/python/ML/Chest-Disease-Classification-from-Chest-CT-Scan-Image/research/mlruns/0/d59fbb30ce5448ada1967bc4493a4031/artifacts
+end_time: 1714905820432
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d59fbb30ce5448ada1967bc4493a4031
+run_name: chill-ram-689
+run_uuid: d59fbb30ce5448ada1967bc4493a4031
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1714905814895
+status: 3
+tags: []
+user_id: rabin
