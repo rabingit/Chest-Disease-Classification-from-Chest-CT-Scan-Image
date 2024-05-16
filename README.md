@@ -82,3 +82,7 @@ export MLFLOW_TRACKING_PASSWORD=6824692c47a369aa6f9eac5b10041d5c8edbcef0
 1. dvc init
 2. dvc repro
 3. dvc dag
+
+### remove git tracking
+git rm -r --cached artifacts
+git commit -m "stop tracking artifacts"
