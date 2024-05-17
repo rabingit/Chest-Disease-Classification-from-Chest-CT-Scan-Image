@@ -1,7 +1,9 @@
 import numpy as np
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
+import tensorflow as tf
 import os
+import sys
 
 
 
@@ -20,9 +22,17 @@ class PredictionPipeline:
         imagename = self.filename
         test_image = image.load_img(imagename, target_size = (224,224))
         test_image = image.img_to_array(test_image)
+        #test_image = test_image/255
         test_image = np.expand_dims(test_image, axis = 0)
+        print(test_image,sys.stderr)
+        print(model.predict(test_image),sys.stderr)
         result = np.argmax(model.predict(test_image), axis=1)
-        print(result)
+        #print(result)
+        #result = model.predict(test_image, batch_size=1)
+        #index = tf.argmax(result, axis=1)
+        #print(index)
+
+        
 
         if result[0] == 1:
             prediction = 'Normal'
